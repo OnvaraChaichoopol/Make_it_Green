@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "dotnet",
+			"task": "watch Make_it_Green",
+			"file": "D:\\DX212\\Make_it_Green\\Make_it_Green\\Make_it_Green.csproj",
+			"problemMatcher": [],
+			"label": "dotnet: watch Make_it_Green"
+		}
+	]
+}

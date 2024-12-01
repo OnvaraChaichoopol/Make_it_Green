@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Make_it_Green.RegisterPage"
+             Title="RegisterPage"
+             BackgroundColor="White">
+
+    <Grid>
+        <!-- Background Image -->
+        <Image Source="login_bg.png" Aspect="AspectFill" />
+    
+        <StackLayout Padding="15">
+
+        <!--สมัครสมาชิก-->
+        <Label 
+            Text="- SIGN UP -" 
+            FontFamily="CloudSoftBold"
+            HorizontalOptions="Center"
+            FontSize="26"
+            TextColor="#FF1F1F1F"
+            Margin="0,240,0,15" />
+        <Label 
+            Text="Username" 
+            FontFamily="CloudSoftBold"
+            TextColor="Black"
+            FontSize="14" 
+            Margin="0,10,0,0"/>
+        <Entry 
+            Placeholder="Username"
+            FontFamily="CloudSoftBold"
+            TextColor="Black"
+            x:Name="UsernameEntry" 
+            BackgroundColor="#F0F0E1"/>
+
+        <Label 
+            Text="Email"
+            TextColor="Black"
+            FontFamily="CloudSoftBold" 
+            FontSize="14" 
+            Margin="0,15,0,0"/>
+        <Entry 
+            Placeholder="Email"
+            TextColor="Black"
+            FontFamily="CloudSoftBold"
+            x:Name="EmailEntry" 
+            Keyboard="Email" 
+            BackgroundColor="#F0F0E1"/>
+
+        <Label 
+            Text="Passwords" 
+            FontFamily="CloudSoftBold" 
+            TextColor="Black"
+            FontSize="14" 
+            Margin="0,15,0,0"/>
+        <Entry 
+            Placeholder="Passwords"
+            FontFamily="CloudSoftBold"
+            TextColor="Black"
+            x:Name="PasswordEntry" 
+            IsPassword="True" 
+            BackgroundColor="#F0F0E1"/>
+
+        <Label 
+            Text="Phone Number"
+            TextColor="Black"
+            FontFamily="CloudSoftBold" 
+            FontSize="14" 
+            Margin="0,15,0,0"/>
+
+        <Entry 
+            Placeholder="Phone"
+            FontFamily="CloudSoftBold" 
+            TextColor="Black"
+            x:Name="PhoneEntry" 
+            Keyboard="Telephone" 
+            BackgroundColor="#F0F0E1"/>
+        
+        <!--ยืนยัน-->
+        <Button 
+            Text="CONFIRM"
+            FontFamily="CloudSoftBold"
+            FontSize="16"
+            TextColor="White" 
+            BackgroundColor="#2b4d15" 
+            CornerRadius="20"
+            WidthRequest="150"
+            Clicked="OnRegisterClicked"
+            Margin="0,30,0,0"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>

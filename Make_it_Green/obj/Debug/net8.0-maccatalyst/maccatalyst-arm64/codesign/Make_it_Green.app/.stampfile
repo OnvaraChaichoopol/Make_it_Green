@@ -1,0 +1,1 @@
+-v --force --timestamp=none --sign - --entitlements /Users/mac/Downloads/MakeItGreen-main/Make_it_Green/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/Entitlements.xcent /Users/mac/Downloads/MakeItGreen-main/Make_it_Green/bin/Debug/net8.0-maccatalyst/maccatalyst-arm64/Make_it_Green.app

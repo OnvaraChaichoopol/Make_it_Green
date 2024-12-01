@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Make_it_Green.TypePage"
+             Title="TypePage"
+             >
+    <Grid>
+
+        <!-- Background Image covering the entire page -->
+        <Image x:Name="ImageBackground"
+               Aspect="AspectFill"/>
+
+        <Grid  Margin="170,319,10,10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="130"/>
+                <RowDefinition Height="65"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+                <ColumnDefinition Width="60"/>
+            </Grid.ColumnDefinitions>
+            <!--ปุ่มลบ-->
+            <Button Grid.Row="0"
+                    Grid.Column="0"
+                    x:Name="decrease_button"
+                    Clicked="decrease_button_Clicked"
+                    Text="-"
+                    FontSize="28"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    >
+            </Button>
+
+
+            <!-- แสดงค่าปัจจุบัน -->
+            <Label x:Name="WeightLable"
+                   Text="0"
+                   FontSize="18"
+                   TextColor="Black"
+                   Grid.Row="0"
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Center"/>
+
+            <!-- ปุ่มบวก -->
+            <Button Grid.Row="0"
+                    Grid.Column="2"
+                    x:Name="increase_button"
+                    Text="+"
+                    FontSize="24"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    Clicked="increase_button_Clicked"
+                    ></Button>
+
+            <!-- แสดงราคา -->
+            <Label
+                x:Name="LabelAmount"
+                Text="0"
+                FontSize="18"
+                TextColor="Black"
+                Grid.Row="1"
+                Grid.Column="1"
+                HorizontalTextAlignment="Center"
+                VerticalOptions="Center"/>
+        </Grid>
+
+        <HorizontalStackLayout Spacing="5" Padding="5">
+        <Button Text="SAVE"
+                FontFamily="CloudSoftBold"
+                Clicked="OnSaveClicked"
+                FontSize="18"
+                TextColor="White"
+                BackgroundColor="#2b4d15"
+                WidthRequest="120"
+                CornerRadius="20"
+                Grid.Row="1"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Margin="70,50,0,50"/>
+
+
+        <Button Text="CANCEL"
+                FontFamily="CloudSoftBold"
+                Clicked="on_canceled"
+                FontSize="18"
+                TextColor="White"
+                BackgroundColor="#2b4d15"
+                WidthRequest="120"
+                CornerRadius="20"
+                Grid.Row="1"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+                Margin="20,50,0,50"/>
+        </HorizontalStackLayout>
+
+    </Grid>
+</ContentPage>
