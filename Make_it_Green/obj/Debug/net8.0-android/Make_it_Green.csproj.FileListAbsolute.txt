@@ -2206,3 +2206,4 @@ D:/DX212/Make_it_Green/Make_it_Green/obj/Debug/net8.0-android/resizetizer/r/draw
 /Users/mac/Downloads/MakeItGreen-main/Make_it_Green/obj/Debug/net8.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/mac/Downloads/MakeItGreen-main/Make_it_Green/obj/Debug/net8.0-android/stamp/_ResolveLibraryProjectImports.stamp
 /Users/mac/Downloads/MakeItGreen-main/Make_it_Green/obj/Debug/net8.0-android/resizetizer/r/drawable/lastpage_bg.png
+/Users/mac/Downloads/MakeItGreen-main/Make_it_Green/obj/Debug/net8.0-android/Make_it_Green.sourcelink.json
